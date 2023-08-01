@@ -1,11 +1,13 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="p-24">
       <div className="grid grid-rows-1 grid-cols-3 mb-24">
         <div className="grid grid-rows-1 grid-cols-3">
-          <p>MonuMint</p>
-          <p>LeaderBoard</p>
-          <p>Album</p>
+          <Link href="/">MonuMint</Link>
+          <Link href="/leaderboard">LeaderBoard</Link>
+          <Link href="/album">Album</Link>
         </div>
 
         <div className="relative rounded-lg bg-gray-100 p-2">
@@ -20,7 +22,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-row-reverse">
-          <p>UserProfile</p>
+          <Link href="/profile">UserProfile</Link>
         </div>
       </div>
       <div>
