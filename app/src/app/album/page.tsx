@@ -1,7 +1,7 @@
 export default function Album() {
   return (
     <div>
-      <p>hi</p>
+      <h1>Album</h1>
     </div>
   );
 }

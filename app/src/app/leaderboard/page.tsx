@@ -1,7 +1,7 @@
 export default function LeaderBoard() {
   return (
     <div>
-      <p>hi</p>
+      <h1>LeaderBoard</h1>
     </div>
   );
 }
