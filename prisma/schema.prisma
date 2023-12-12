@@ -22,20 +22,21 @@ model Monument {
   description String   @db.Text
   image_url   String   @unique @db.VarChar(63)
   users       User[]
+  poem        String   @db.Text
 }
 
 model User {
   id            Int        @id @default(autoincrement())
   createdAt     DateTime   @default(now())
   updatedAt     DateTime   @updatedAt
-  address       String     @unique @db.Char(42)
+  address       String?    @unique @db.Char(42)
   username      String     @unique @db.VarChar(15)
   email         String     @unique @db.VarChar(63)
   bio           String?    @db.VarChar(255)
   avatar_url    String?    @db.VarChar(63)
   password      String     @db.VarChar(63)
-  x_url         String     @db.VarChar(255)
-  instagram_url String     @db.VarChar(255)
+  x_url         String?    @db.VarChar(255)
+  instagram_url String?    @db.VarChar(255)
   points        Int
   monuments     Monument[]
 }
