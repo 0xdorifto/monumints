@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 datasource db {
   provider     = "mysql"
   url          = env("DATABASE_URL")
@@ -21,8 +18,8 @@ model Monument {
   year        Int      @db.SmallInt
   description String   @db.Text
   image_url   String   @unique @db.VarChar(63)
-  users       User[]
   poem        String   @db.Text
+  users       User[]
 }
 
 model User {
