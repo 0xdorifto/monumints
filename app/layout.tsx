@@ -6,7 +6,7 @@ import NavBar from "./ui/navbar";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MonuMint",
+  title: "Monumints",
   description: "Collectible NFT album for UNESCO world heritage sites.",
 };
 
@@ -18,8 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <NavBar />
-        {children}
+        <div className="px-48">
+          <NavBar />
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );

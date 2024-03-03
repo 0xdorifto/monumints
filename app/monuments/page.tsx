@@ -6,13 +6,12 @@ const prisma = new PrismaClient();
 export default async function Page() {
   const monuments = await prisma.monument.findMany();
 
-  return <div className="flex items-center justify-center flex-col">
-    <h2>MONUMENTS</h2>
+  return (
+    <div className="flex items-center justify-center flex-col">
+      <h2>Monuments</h2>
       {monuments.map((monument, index) => (
-        <Card
-        key={index}
-        monument={monument}>
-        </Card>
+        <Card key={index} monument={monument}></Card>
       ))}
-  </div>;
+    </div>
+  );
 }

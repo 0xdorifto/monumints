@@ -13,7 +13,7 @@ export default async function Page() {
 
   return (
     <div className="flex items-center justify-content flex-col">
-      <h2>LEADERBOARD</h2>
+      <h2>Leaderboard</h2>
       <Podium users={users} />
       <div>
         {users.map((user, index) => (
