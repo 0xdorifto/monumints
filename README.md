@@ -1,35 +1,40 @@
-# Monumints 🏰
+## Getting Started
 
-Monumints is a collectible NFT album for UNESCO world heritage sites.
-
-## Usage
-
-Install dependencies:
+Create a project using this example:
 
 ```bash
-npm i
+npx thirdweb create --template next-typescript-starter
 ```
 
-To setup the database, after creating your [planetscale repo](https://planetscale.com/) and following the instructions;
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-Create tables:
+On `pages/_app.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
+[UI Components](https://portal.thirdweb.com/ui-components) to work.
+
+## Environment Variables
+
+To run this project, you will need to add environment variables. Check the `.env.example` file for all the environment variables required and add it to `.env.local` file or set them up on your hosting provider.
+
+## Deploy to IPFS
+
+Deploy a copy of your application to IPFS using the following command:
 
 ```bash
-npx prisma db push
+yarn deploy
 ```
 
-Seed the database:
+## Learn More
 
-```bash
-npx prisma db seed
-```
+To learn more about thirdweb and Next.js, take a look at the following resources:
 
-Run the app:
+- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
+- [thirdweb TypeScript Documentation](https://docs.thirdweb.com/typescript) - learn about our JavaScript/TypeScript SDK.
+- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Templates](https://thirdweb.com/templates)
 
-```bash
-npm run dev
-```
+You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
 
----
+## Join our Discord!
 
-Built by [Gastão Faria](https://www.0xdorifto.pt/) and Bruno Tomás
+For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
